@@ -19,6 +19,6 @@
     </bean>
 
     <!--将自己的类交给SpringIOC容器，注册Bean-->
-    <bean id="/hello" class="com.neusoft.controller.HelloController"/>
+    <bean id="/hello" class="com.neusoft.controller.ControllerTest1"/>
 
 </beans>
