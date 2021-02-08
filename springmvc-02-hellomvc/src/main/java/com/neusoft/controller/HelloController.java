@@ -10,7 +10,8 @@ import javax.servlet.http.HttpServletResponse;
 public class HelloController implements Controller {
 
     @Override
-    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response) throws Exception {
+    public ModelAndView handleRequest(HttpServletRequest request, HttpServletResponse response)
+            throws Exception {
         // ModelAndView 模型和视图
         ModelAndView mv = new ModelAndView();
         // 封装对象，放在 ModelAndView 的 model 中

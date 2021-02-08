@@ -5,25 +5,22 @@
          http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd"
          version="4.0">
 
-    <!--1.注册DispatcherServlet-->
+    <!--1.注册servlet-->
     <servlet>
-        <servlet-name>springmvc</servlet-name>
+        <servlet-name>SpringMVC</servlet-name>
         <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
-        <!--DispatcherServlet关联一个springmvc的配置文件springmvc-servlet.xml-->
-        <!--设置参数-->
+        <!--通过初始化参数指定SpringMVC配置文件的位置，进行关联-->
         <init-param>
-
             <param-name>contextConfigLocation</param-name>
             <param-value>classpath:springmvc-servlet.xml</param-value>
         </init-param>
-        <!--启动级别 1 最高级别，服务器一启动就整体启动起来-->
+        <!-- 启动顺序，数字越小，启动越早 -->
         <load-on-startup>1</load-on-startup>
     </servlet>
 
-    <!--/  匹配所有请求：（不包括jsp）-->
-    <!--/* 匹配所有请求：（包括jsp）-->
+    <!--所有请求都会被springmvc拦截 -->
     <servlet-mapping>
-        <servlet-name>springmvc</servlet-name>
+        <servlet-name>SpringMVC</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
 
