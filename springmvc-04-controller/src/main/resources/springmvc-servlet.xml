@@ -25,6 +25,4 @@
         <property name="suffix" value=".jsp" />
     </bean>
 
-    <bean id="/test1" class="com.neusoft.controller.ControllerTest1"/>
-
 </beans>
