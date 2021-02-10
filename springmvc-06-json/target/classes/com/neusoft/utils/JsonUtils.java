@@ -20,7 +20,8 @@ public class JsonUtils {
         SimpleDateFormat sdf = new SimpleDateFormat(dateFormat);
         try {
             // 将默认时间戳方式设置为false
-            mapper.configure(SerializationFeature.WRITE_DATES_AS_TIMESTAMPS,false);
+            mapper.configure(
+                    SerializationFeature.WRITE_DATES_AS_TIMESTAMPS,false);
             mapper.setDateFormat(sdf);
             return mapper.writeValueAsString(object);
         } catch (JsonProcessingException e) {

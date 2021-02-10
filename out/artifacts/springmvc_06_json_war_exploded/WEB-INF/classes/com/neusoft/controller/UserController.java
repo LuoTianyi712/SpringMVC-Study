@@ -1,7 +1,6 @@
 package com.neusoft.controller;
 
 import com.alibaba.fastjson.JSON;
-import com.fasterxml.jackson.core.JsonProcessingException;
 import com.neusoft.pojo.User;
 import com.neusoft.utils.JsonUtils;
 import org.springframework.web.bind.annotation.RequestMapping;
