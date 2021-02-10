@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>JSON Test</title>
+</head>
+<body>
+    <script type="text/javascript">
+        // 编写js对象
+        const user = {
+            name: "地方",
+            age: 12,
+            sex: "男"
+        };
+
+        // 将js对象转换为json对象
+        const json = JSON.stringify(user)
+        console.log(json )
+
+        console.log(JSON.parse(json))
+
+        console.log(user)
+    </script>
+</body>
+</html>
