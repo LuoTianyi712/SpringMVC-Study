@@ -4,9 +4,9 @@
        xsi:schemaLocation="http://www.springframework.org/schema/beans
         https://www.springframework.org/schema/beans/spring-beans.xsd">
 
-    <!--添加处理映射器，由spring完成-->
+    <!--添加 处理器映射器，由spring完成-->
     <bean class="org.springframework.web.servlet.handler.BeanNameUrlHandlerMapping"/>
-    <!--添加处理器适配器，由spring完成-->
+    <!--添加 处理器适配器，由spring完成-->
     <bean class="org.springframework.web.servlet.mvc.SimpleControllerHandlerAdapter"/>
     <!--添加视图解析器，由spring完成-->
     <!--视图解析器：DispatcherServlet 给它的 ModelAndView-->
@@ -19,6 +19,6 @@
     </bean>
 
     <!--将自己的类交给SpringIOC容器，注册Bean-->
-    <bean id="/hello" class="com.neusoft.controller.HelloController"/>
+    <bean id="/hello" class="com.neusoft.controller.ControllerTest1"/>
 
 </beans>
