@@ -84,7 +84,7 @@ public class FileController {
             throws Exception{
         //要下载的图片地址
         String path = request.getServletContext().getRealPath("/upload");
-        String fileName = "1.png";
+        String fileName = "1.png";//从上传点获取的文件名
 
         //1、设置response 响应头
         response.reset(); //设置页面不缓存,清空buffer

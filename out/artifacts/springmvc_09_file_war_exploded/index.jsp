@@ -16,6 +16,6 @@
     <input type="submit" value="upload">
   </form>
 
-  <a href="${pageContext.request.contextPath}/res/1.png">点击下载</a>
+  <a href="${pageContext.request.contextPath}/download">点击下载</a>
   </body>
 </html>
